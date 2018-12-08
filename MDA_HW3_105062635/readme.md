@@ -1,7 +1,18 @@
-KMeansM.java¡G¨Ï¥ÎManhattan Distance­pºâªº¥Dµ{¦¡
-KMeansE.java¡G¨Ï¥ÎEuclidean Distance­pºâªº¥Dµ{¦¡
-result.txt¡G¨CºØ²Õ¦X¨C¤@½üªºcost¡A©M³Ì«á10­Ócluster centroids¨â¨â¤§¶¡ªº¶ZÂ÷
-Euclidean_c1, Euclidean_c2, Manhattan_c1, Manhattan_c2¡G¦UºØ²Õ¦X³Ì«á±o¨ìªº10­Ócluster centroids¡C
-°õ¦æ®É¨Ï¥Î¦p¤U«ü¥O¡G
-yarn jar target/wordcountjava-1.0-SNAPSHOT.jar org.apache.hadoop.examples.KMeansE /user/root/data/data.txt /user/root/data/c2.txt output/out1
-³Ì«á¤T­Ó°Ñ¼Æ¤À§O¬°©Ò¦³¸ê®ÆÂIÀÉ®×¡Bªì©lcentroidsÀÉ®×¡B¿é¥X¸ô®|
+# Hadoop Implementation of K-means Clustering
+
+### File Description
+  
+  * KMeansM.javaï¼šK-means using Manhattan distance
+  * KMeansE.javaï¼šK-means using Euclidean distance
+  * result.txtï¼š**cost** for each round and **the distance matrix** for cluster centroids in the last round
+  * Euclidean_c1, Euclidean_c2, Manhattan_c1, Manhattan_c2ï¼šResulted 10 cluster centroids for each case
+  
+â€»c1: 10 randon initial centroids
+
+â€»c2: 10 initial centroids as far as possible
+
+### Compilation
+  ```shell
+  yarn jar target/wordcountjava-1.0-SNAPSHOT.jar org.apache.hadoop.examples.KMeansE /user/root/data/data.txt /user/root/data/c2.txt output/out1
+  ```
+The last 3 arguments are input data points, initial centroids and output path, respectively.
