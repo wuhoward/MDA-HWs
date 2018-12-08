@@ -5,7 +5,7 @@
   * **MDA_HW2_v2.pdf:** Problem Description
   * **PageRank.java:** Main program
   * **p2p-Gnutella04.txt:** Input file
-  * **output20, output36：** Results for for 20 iterations and 36 iterations (reaching convergence)
+  * **output20, output36:** Results for for 20 iterations and 36 iterations (reaching convergence)
   * **Report:** Summary of experimental result and conclusion
 
 ### Parameters in the Main Program
