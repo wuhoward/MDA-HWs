@@ -1,12 +1,23 @@
-°õ¦æ¡G
-yarn jar target/wordcountjava-1.0-SNAPSHOT.jar org.apache.hadoop.examples.PageRank /user/root/data/p2p-Gnutella04.txt output/out1
+# Hadoop Implementation of Pagerank
 
-µ{¦¡½X¤¤¥i­×§ï¤§¬ÛÃö°Ñ¼Æ¡G
-NODES		Á`µ²ÂI¼Æ (default: 10876)
-BETA		¤½¦¡¤¤ªº£] (default: 0.8)
-TOPN		¤À¼Æ³Ì°ªªº«e´X¦W (default: 10)
-MAXROUND	³Ì¦h°õ¦æ´X½ü (default: 100)
-PRECISION	µ²ªGºë½T«×(¤p¼ÆÂI«á´X¦ì¡A¿é¤J0¨Ï¥Îdouble­ì¥»ºë½T«×) (default: 0)
+### File Description
+  
+  * **MDA_HW2_v2.pdf:** Problem Description
+  * **PageRank.java:** Main program
+  * **p2p-Gnutella04.txt:** Input file
+  * **output20, output36ï¼š** Results for for 20 iterations and 36 iterations (reaching convergence)
+  * **Report:** Summary of experimental result and conclusion
 
-TOP 10µ²ªG¼g¦bReport¤¤
-output20, output36¤À§O¬°¹ïp2p-Gnutella04.txt¶]20½ü»P¶]¨ì¦¬ÀÄ(36½ü)ªºµ²ªG
+### Parameters in the Main Program
+
+  * **NODES:** Total number of nodes (default: 10876)
+  * **BET:** Î² (default: 0.8)
+  * **TOPN:** Keep Top-N vertices sorted by rank (default: 10)
+  * **MAXROUND:** max iterations to run (default: 100)
+  * **PRECISION:** number of fractional digits;enter 0 for double precision (default: 0)
+
+### Compilation
+  ```shell
+  yarn jar target/wordcountjava-1.0-SNAPSHOT.jar org.apache.hadoop.examples.PageRank /user/root/data/p2p-Gnutella04.txt output/out1
+  ```
+
