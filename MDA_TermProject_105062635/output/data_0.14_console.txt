@@ -1,0 +1,15 @@
+-----------Itemsets  Count-----------
+Size:2  Count:1
+Size:1  Count:3
+
+----------Frequent Itemsets----------
+Itemset             Count
+1                   7
+2                   8
+2,3                 6
+3                   9
+
+----------Association Rules----------
+Rule                     Confidence               Interest
+[3]→2                    0.6666666666666666       0.09523809523809523
+[2]→3                    0.75                     0.1071428571428571
